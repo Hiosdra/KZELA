@@ -16,6 +16,7 @@ def extended_euclides(a, b):
     return old_s, bezout_t, old_r
 
 
+# task 1
 def euclidInverse(a, m):
     y = 0
     x = 1
@@ -33,6 +34,7 @@ def euclidInverse(a, m):
     return x
 
 
+# task 2
 def binaryPow(a, b, m):
     a %= m
     res = 1
@@ -44,9 +46,11 @@ def binaryPow(a, b, m):
     return res
 
 
+# task 3
 def quadratic_residue(a, p):
     ls = binaryPow(a, (p - 1) // 2, p)
     return -1 if ls == p - 1 else ls
+
 
 if __name__ == '__main__':
     # task 1
