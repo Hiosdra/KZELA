@@ -1,10 +1,7 @@
-from miniproject2 import pPlusQ, pPlusP
-
-
-# task
 from test import sumPoint
 
 
+# task
 def nP(A, B, p, n, x, y):
     Q = (x, y)
     R = ("e", "e")
