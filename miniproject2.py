@@ -48,12 +48,12 @@ def randomPoint2(x, A, B, p):
     return y
 
 
-# task 3 gut
+# task 3 good
 def minusP(x1: int, y1: int, p: int):
     return x1, (-y1) % p
 
 
-# task 4 gut
+# task 4 bad, use from test.py
 def pPlusQ(x1: int, y1: int, x2: int, y2: int, p: int):
     if x1 == 0 and y1 == 0:
         return x2, y2
@@ -65,7 +65,7 @@ def pPlusQ(x1: int, y1: int, x2: int, y2: int, p: int):
     return x3, y3
 
 
-# task 4
+# task 4 - good, also you can use from test.py
 def pPlusP(A: int, x1: int, y1: int, p: int):
     delta = (((3 * pow(x1, 2, p)) + A) % p * (main.euclidInverse(2 * y1, p))) % p
     x3 = (pow(delta, 2, p) - 2 * x1) % p
